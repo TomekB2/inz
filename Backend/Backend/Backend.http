@@ -1,0 +1,6 @@
+@Backend_HostAddress = https://localhost:7284
+
+GET {{Backend_HostAddress}}/GetFermentationList/
+Accept: application/json
+
+###
