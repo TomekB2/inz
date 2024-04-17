@@ -1,0 +1,17 @@
+<div fxLayoutAlign="center center" fxFlexFill="center">
+    <mat-card fxFlex="50">
+      <mat-toolbar color="primary">Ustawienia</mat-toolbar>
+      <form fxLayoutAlign="stretch" fxLayout="column" name="settingsform">
+        <mat-form-field>
+          <mat-label>Adres IP Raspberry</mat-label>
+          <input matInput  name="ip" [(ngModel)]="settings.value1" required value="{{ip}}">
+        </mat-form-field>
+      
+        <mat-form-field>
+          <mat-label>Częstotliwosc pomiatru temperatury w minutach</mat-label>
+          <input matInput [(ngModel)]="settings.value2" name="time" required value="{{time}}">
+        </mat-form-field>
+        <button mat-raised-button type="submit" (click)="onClick()">Zapisz</button>
+      </form>
+    </mat-card>
+  </div>

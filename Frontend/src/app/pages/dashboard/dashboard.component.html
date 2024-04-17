@@ -1,0 +1,17 @@
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+<div fxLayoutAlign="center center" fxFlexFill="center">
+    <mat-card fxFlex="25">
+      <mat-toolbar color="primary">Status Serwisu RaspberryPi:&nbsp;&nbsp;
+            <div *ngIf="!message" class="offline-indicator">
+                <span class="offline-blink"></span>
+                
+            </div>
+            <h2 *ngIf="!message" class="online-text">Offline</h2>
+            <div *ngIf="message" class="online-indicator">
+                <span class="online-blink"></span>
+            </div>
+            <h2 *ngIf="message" class="online-text">Online</h2>
+    </mat-toolbar>
+    </mat-card>
+    <p>Nie mam zielonego pojecia co tu napisac</p>
+</div>

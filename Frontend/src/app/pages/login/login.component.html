@@ -1,0 +1,17 @@
+<div fxLayoutAlign="center center" fxFlexFill="center">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Logowanie</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" name="loginForm">
+      <mat-form-field>
+        <mat-label>Login</mat-label>
+        <input matInput [(ngModel)]="loginObj.userName" name="login" required>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <mat-label>Hasło</mat-label>
+        <input matInput type="password" [(ngModel)]="loginObj.password" name="password" required>
+      </mat-form-field>
+      <button mat-raised-button type="submit" (click)="onLogin()">Zaloguj się</button>
+    </form>
+  </mat-card>
+</div>

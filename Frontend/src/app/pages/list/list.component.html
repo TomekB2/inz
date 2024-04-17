@@ -1,0 +1,11 @@
+<div fxLayoutAlign="center center" fxFlexFill="center">
+<mat-form-field>
+    <mat-label>Lista Fermentacji</mat-label>
+    <mat-select [(value)]="listId" required>
+      @for (list of list; track list) {
+        <mat-option [value]="list.id">{{list.name}}</mat-option>
+      }
+    </mat-select>
+    <button mat-raised-button type="submit" (click)="change(listId)">Przejdz do wykresu</button>
+  </mat-form-field>
+</div>

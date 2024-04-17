@@ -1,0 +1,13 @@
+<div *ngIf="valid" fxLayoutAlign="center center" fxFlexFill="center">
+        <mat-card fxFlex="25">
+          <mat-toolbar color="primary">Przerwanie aktywnej fermentacji</mat-toolbar>
+          Czy chcesz przerwac aktywny cykl fermetnacji rozpoczety: {{time}}?<br>
+          <button mat-raised-button type="submit" (click)="openDialog()">Przerwij aktywny</button>
+        </mat-card>
+</div>
+<div *ngIf="!valid" fxLayoutAlign="center center" fxFlexFill="center">
+    <mat-card fxFlex="25">
+      <mat-toolbar color="primary">Brak aktywnej Fermentacji</mat-toolbar>
+      <button mat-raised-button type="submit" (click)="back()">Wroc do Strony Głownej</button>
+    </mat-card>
+</div>
